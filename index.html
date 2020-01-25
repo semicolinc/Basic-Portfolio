@@ -3,9 +3,12 @@
     <meta charset = "UTF-8">
     <html lang = "en-US">
     <link href = "assets/css/style.css" type = "text/css" rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <title>About Me - Colin Chang</title>
 </head>
-    <nav>
+
+    <nav class = "navbar">
+
         <h2 class = "name">
             Colin Chang
         </h2>
@@ -17,19 +20,47 @@
             <li>|</li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+
     </nav>
+    
+    <script>
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        
+        var currentScrollPos = window.pageYOffset;
+
+            if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        
+        }
+    </script>
 
 <body>
     
     <div class = "container">
         
-        <img src= "assets/images/ProfilePic1.jpg" 
-        alt = "It's me!" width=350/>
+        <img id = "Profile_pic" src= "assets/images/ProfilePic1.jpg" 
+        alt = "It's me!" width= auto height = 250px/>
         
-        <div class = "container">
-            Here's a paragraph.
+        <div id = specialPara>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
 
     </div> 
 
 </body>
+
+<footer>
+
+    <div class = "footer">
+        <p id = "inside_footer">
+            Copyright ©
+        </p>
+    </div>
+    
+</footer>
