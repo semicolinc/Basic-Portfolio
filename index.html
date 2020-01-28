@@ -22,47 +22,37 @@
         </ul>
 
     </nav>
-    
-    <script>
-
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        
-        var currentScrollPos = window.pageYOffset;
-
-            if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-50px";
-            }
-            prevScrollpos = currentScrollPos;
-        
-        }
-    </script>
 
 <body>
 
-    <div class = "container">
+    <main style='flex-wrap: wrap'>
+        
+        <h2 class = "topic">
+            About Me
+        </h2>
 
-        <div>
+        <hr class = "line">
 
-            <h2 class = "topic">
-                About Me
-            </h2>
-
-            <hr class = "line">
-
+        <!-- <hr class = "line"> -->
+        
+        <div class="container">
+            
+            <img id = "Profile_pic" src= "assets/images/ProfilePic1.jpg" 
+                alt = "It's me!" width="auto" height ="250px"/>
+                
+            <div id = "specialPara">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            
         </div>
         
-        <img id = "Profile_pic" src= "assets/images/ProfilePic1.jpg" 
-        alt = "It's me!" width= auto height = 250px/>
-        
-        <div id = specialPara>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
+        <!-- <div style="display:flex; flex-basis: 100%; flex-wrap: nowrap"></div> -->
 
-    </div> 
+            <div id = "specialPara" style = "margin: 0 30px 0 30px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
 
+    </main>
 </body>
 
 <footer>
