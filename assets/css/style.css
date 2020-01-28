@@ -201,3 +201,20 @@ input[type=submit] {
     height: auto;
 
 }
+/*
+.absolute {
+
+    width: inherit;
+    height: 50px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    top: -20px;
+    z-index: 1;
+    right: 20px;
+    position: absolute;
+
+}
+
+This didn't work.
+
+*/
