@@ -115,7 +115,7 @@ main {
 #specialPara {
     display: flex;
     font-size: 20px;
-    margin: 15px 15px 0 15px;
+    margin: 0 15px 0 15px;
     line-height: 30px;
     flex-basis: 100%;
 }
