@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #F1F1F1;
+    background-image:url(email-pattern.png);
     overflow-x: hidden;
     width: 100%;
 }
